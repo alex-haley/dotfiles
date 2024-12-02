@@ -1,0 +1,433 @@
+#+title: Uni
+
+* main
+** schedule: https://istu.edu/schedule/?group=466391
+** campus: https://int.istu.edu/extranet
+
+* Phy
+** properties
+*** teacher: Днепровская Лариса Васильевна
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=1169
+*** course (1st semester): https://el.istu.edu/course/view.php?id=1652
+*** books:
+*** cab: Б-209 / Б-207 / Б-202 / Б-Амф
+** schedule
+*** TODO Physics (Lecture)
+SCHEDULED: <2024-05-07 Вт 10:00 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-30 Вт 18:04]
+:END:
+
+- State "DONE"       from "TODO"       [2024-04-30 Вт 18:04]
+- State "DONE"       from "TODO"       [2024-04-24 Ср 05:26]
+- State "DONE"       from "TODO"       [2024-03-19 Tue 18:04]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 17:57]
+*** TODO Physics (Practice)
+SCHEDULED: <2024-05-16 Чт 13:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-05-03 Пт 13:29]
+:END:
+
+- State "DONE"       from "TODO"       [2024-05-03 Пт 13:29]
+*** TODO Physics (Lab)
+SCHEDULED: <2024-05-17 Пт 13:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-05-03 Пт 13:30]
+:END:
+
+- State "DONE"       from "TODO"       [2024-05-03 Пт 13:30]
+** homework
+*** DONE Physics: Send Lecture to el.edu
+DEADLINE: <2024-03-19 Tue>
+
+*** DONE Physics: Seminar exercises
+DEADLINE: <2024-03-21 Thu>
+
+*** DONE Physics: labs
+DEADLINE: <2024-03-22 Fri>
+*** DONE Physics: seminar problems
+DEADLINE: <2024-05-02 Thu>
+
+*** TODO Physics test for lab 11
+DEADLINE: <2024-05-06 Mon>
+** notes
+*** DONE Physics: Labs for 1st Sem needed to be done
+DEADLINE: <2024-04-13 Sat>
+
+* Math
+** properties
+*** teacher: Sinizkaya Anastasiya Vladimirovna
+*** location: campus
+*** cab: B-amf / I-121a
+*** course: none
+** schedule
+*** TODO Math (Practice)
+SCHEDULED: <2024-05-06 Пн 13:45 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-29 Пн 18:37]
+:END:
+
+- State "DONE"       from "TODO"       [2024-04-29 Пн 18:37]
+- State "DONE"       from "TODO"       [2024-04-22 Пн 17:30]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-18 Mon 11:51]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 07:38]
+*** TODO Math (Lection)
+SCHEDULED: <2024-05-08 Ср 10:00 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-05-01 Ср 04:20]
+:END:
+- State "DONE"       from "TODO"       [2024-05-01 Ср 04:20]
+- State "DONE"       from "TODO"       [2024-04-24 Ср 16:26]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-13 Wed 18:32]
+** homework
+*** DONE Math: 8.1 ; 8.2 full
+DEADLINE: <2024-03-18 Mon>
+*** DONE Math: 9.2, 13.1 (1,2)
+DEADLINE: <2024-04-29 Mon>
+** notes
+*** DONE Additional Math Practice
+SCHEDULED: <2024-03-13 Wed 08:15>
+
+*** DONE Additional Math Practice
+SCHEDULED: <2024-03-27 Wed 13:45>
+* CS
+** properties
+*** teacher: Lysichko Olga Innokentyevna
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=5648
+*** books: Ryabushko Calculus IDZ vol. 1 and vol. 2
+*** cab: V-302
+** schedule
+*** TODO CS practice
+SCHEDULED: <2024-05-06 Пн 08:15 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-29 Пн 18:37]
+:END:
+- State "DONE"       from "TODO"       [2024-04-29 Пн 18:37]
+- State "DONE"       from "TODO"       [2024-04-22 Пн 17:30]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-18 Mon 11:51]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 07:38]
+** homework
+*** DONE CS: redact vba file and send it to moodle on the next class
+DEADLINE: <2024-04-29 Mon>
+** notes
+*** there's no need to attend classes anymore before exam
+* Deutsch
+** properties
+*** teacher: Pozdnyakova Svetlana Your'evna
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=891
+*** books: Deutsch Ohne Probleme Full Deutschkurs
+*** cab: V-318
+** schedule
+*** TODO Deutsch
+SCHEDULED: <2024-05-06 Пн 11:45 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-29 Пн 18:37]
+:END:
+
+- State "DONE"       from "TODO"       [2024-04-29 Пн 18:37]
+- State "DONE"       from "TODO"       [2024-04-22 Пн 17:30]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-18 Mon 11:51]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 07:38]
+*** TODO Deutsch
+SCHEDULED: <2024-05-08 Ср 11:45 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-05-01 Ср 04:20]
+:END:
+- State "DONE"       from "TODO"       [2024-05-01 Ср 04:20]
+- State "DONE"       from "TODO"       [2024-04-24 Ср 16:26]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-13 Wed 18:32]
+** homework
+*** DONE Deutsch: pgs 169-186 read & mem verbs
+DEADLINE: <2024-03-11 Mon>
+
+*** DONE Deutsch: pgs 159-186 learning
+DEADLINE: <2024-03-18 Mon>
+** notes
+
+* Graphics
+** properties
+*** teacher: Verkhoturova Elena Viktorovna
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=518
+*** books: none
+*** cab: B-307
+** schedule
+*** TODO Graphics
+SCHEDULED: <2024-05-07 Вт 15:30 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-30 Вт 18:04]
+:END:
+- State "DONE"       from "TODO"       [2024-04-30 Вт 18:04]
+- State "DONE"       from "TODO"       [2024-04-24 Ср 05:26]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-19 Tue 18:04]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 17:57]
+** homework
+*** DONE drawning fix + nanoCAD task 1 get it done
+DEADLINE: <2024-03-12 Tue>
+
+*** DONE Graphics: send first drawing to el.edu
+DEADLINE: <2024-03-19 Tue>
+
+*** DONE Bolt-Soed and SRab + send new ver of shpil-soed
+DEADLINE: <2024-04-23 Tue>
+** notes
+*** 4/5 for homework and 5/5 for control work!!!
+
+* PE
+** properties
+*** teacher: Orobey Maksim Nikolaevich
+*** location: FOK
+*** course: https://el.istu.edu/course/view.php?id=7665
+*** books: none
+*** cab: FOK
+** schedule
+*** TODO PE
+SCHEDULED: <2024-05-06 Пн 10:00 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-29 Пн 18:37]
+:END:
+- State "DONE"       from "TODO"       [2024-04-29 Пн 18:37]
+- State "DONE"       from "TODO"       [2024-04-22 Пн 17:30]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-18 Mon 11:51]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 07:38]
+*** TODO PE
+SCHEDULED: <2024-05-09 Чт 10:00 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-05-03 Пт 13:29]
+:END:
+- State "DONE"       from "TODO"       [2024-05-03 Пт 13:29]
+- State "DONE"       from "TODO"       [2024-04-25 Чт 16:44]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:30]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-14 Thu 15:43]
+** homework
+** notes
+* ODK
+** properties
+*** teacher: Artamomova Anastasiya Svyatoslavovna
+*** location: campus
+*** course: none
+*** books: none
+*** cab: J-316
+** schedule
+*** TODO ODK
+SCHEDULED: <2024-05-07 Вт 11:45 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-30 Вт 18:04]
+:END:
+- State "DONE"       from "TODO"       [2024-04-30 Вт 18:04]
+- State "DONE"       from "TODO"       [2024-04-24 Ср 05:26]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:31]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-19 Tue 18:04]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 17:57]
+** homework
+*** DONE selfpresentation
+DEADLINE: <2024-03-12 Tue>
+** notes
+
+* ProfDel
+** properties
+*** teacher: Chensky
+*** location: Technopark
+*** course: none
+*** books: none
+*** cab: Z-206a
+** schedule
+*** TODO ProfDel
+SCHEDULED: <2024-05-07 Вт 13:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-24 Ср 05:26]
+:END:
+- State "DONE"       from "TODO"       [2024-04-24 Ср 05:26]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 17:57]
+*** TODO ProfDel
+SCHEDULED: <2024-05-16 Чт 11:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-05-03 Пт 13:29]
+:END:
+- State "DONE"       from "TODO"       [2024-05-03 Пт 13:29]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:26]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+** homework
+*** DONE ProfDel: NFC Protocol Presentation
+DEADLINE: <2024-03-26 Tue>
+
+*** TODO Exam practice
+DEADLINE: <2024-05-05 Sun>
+** notes
+
+* OTC
+** properties
+*** teacher: Nasnikova Irina Genadyevna
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=2041
+*** books: none
+*** cab: J-306 / J-304
+** schedule
+*** TODO OTC (Lecture)
+SCHEDULED: <2024-05-14 Вт 13:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-30 Вт 18:04]
+:END:
+
+- State "DONE"       from "TODO"       [2024-04-30 Вт 18:04]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-19 Tue 18:04]
+*** TODO OTC (Practice)
+SCHEDULED: <2024-05-15 Ср 08:15 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-05-01 Ср 04:20]
+:END:
+
+- State "DONE"       from "TODO"       [2024-05-01 Ср 04:20]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:27]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+*** TODO OTC (Lab)
+SCHEDULED: <2024-05-03 Пт 15:30 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-21 Вс 17:26]
+:END:
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:26]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+** homework
+*** DONE course work task 1
+DEADLINE: <2024-03-21 Thu>
+
+*** DONE OTC: use new methods on AC from course work n1
+DEADLINE: <2024-03-22 Fri>
+
+*** TODO coursework task 1, 2
+DEADLINE: <2024-05-05 Sun>
+
+*** TODO lab 4
+DEADLINE: <2024-05-03 Fri>
+
+*** TODO lab 3
+DEADLINE: <2024-05-05 Sun>
+** notes
+
+* History
+** properties
+*** teacher:
+*** location:
+*** course:
+*** books:
+*** cab:
+** schedule
+*** TODO History (Lecture)
+SCHEDULED: <2024-05-09 Чт 11:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-25 Чт 16:44]
+:END:
+
+- State "DONE"       from "TODO"       [2024-04-25 Чт 16:44]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-14 Thu 15:43]
+*** TODO History (Seminar)
+SCHEDULED: <2024-05-16 Чт 08:15 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-05-03 Пт 13:29]
+:END:
+- State "DONE"       from "TODO"       [2024-05-03 Пт 13:29]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:26]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:26]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+** homework
+*** DONE History: Seminar
+DEADLINE: <2024-03-21 Thu>
+
+*** DONE Seminar 12 + Dict 11
+DEADLINE: <2024-05-02 Thu>
+
+*** TODO History: Seminar 12 patch
+DEADLINE: <2024-05-16 Thu>
+
+** notes
+
+* OTPI
+** properties
+*** teacher:
+*** location:
+*** course:
+*** books:
+*** cab:
+** schedule
+*** TODO OTPI (x2)
+SCHEDULED: <2024-05-10 Пт 08:15 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-04-26 Пт 12:54]
+:END:
+- State "DONE"       from "TODO"       [2024-04-26 Пт 12:54]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:25]
+- State "DONE"       from "TODO"       [2024-04-21 Вс 17:24]
+- State "DONE"       from "TODO"       [2024-03-15 Fri 22:01]
+** homework
+** notes

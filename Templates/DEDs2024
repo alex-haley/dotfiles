@@ -1,0 +1,312 @@
+#+title: Uni
+
+* main
+** main page: https://istu.edu/schedule/?group=466391
+** campus: https://int.istu.edu/extranet
+
+* Phy
+** properties
+*** teacher: Днепровская Лариса Васильевна
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=1169
+*** course (1st semester): https://el.istu.edu/course/view.php?id=1652
+*** books:
+*** cab: Б-209 / Б-207 / Б-202 / Б-Амф
+** schedule
+*** TODO Physics (Lecture)
+SCHEDULED: <2024-03-26 Tue 10:00 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-19 Tue 18:04]
+:END:
+
+- State "DONE"       from "TODO"       [2024-03-19 Tue 18:04]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 17:57]
+*** TODO Physics (Practice)
+SCHEDULED: <2024-03-21 Thu 13:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT:
+:END:
+
+*** TODO Physics (Lab)
+SCHEDULED: <2024-03-22 Fri 13:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT:
+:END:
+
+** homework
+*** DONE Physics: Send Lecture to el.edu
+DEADLINE: <2024-03-19 Tue>
+
+*** TODO Physics: Seminar exercises
+DEADLINE: <2024-03-21 Thu>
+
+*** TODO Physics: labs
+DEADLINE: <2024-03-22 Fri>
+** notes
+*** TODO Physics: Labs for 1st Sem needed to be done
+DEADLINE: <2024-04-13 Sat>
+
+* Math
+** properties
+*** teacher: Sinizkaya Anastasiya Vladimirovna
+*** location: campus
+*** cab: B-amf / I-121a
+*** course: none
+** schedule
+*** TODO Math (Practice)
+SCHEDULED: <2024-03-25 Mon 13:45 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-18 Mon 11:51]
+:END:
+
+- State "DONE"       from "TODO"       [2024-03-18 Mon 11:51]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 07:38]
+*** TODO Math (Lection)
+SCHEDULED: <2024-03-20 Wed 10:00 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-13 Wed 18:32]
+:END:
+- State "DONE"       from "TODO"       [2024-03-13 Wed 18:32]
+** homework
+*** DONE Math: 8.1 ; 8.2 full
+DEADLINE: <2024-03-18 Mon>
+** notes
+*** DONE Additional Math Practice
+SCHEDULED: <2024-03-13 Wed 08:15>
+
+*** TODO Additional Math Practice
+SCHEDULED: <2024-03-27 Wed 13:45>
+* CS
+** properties
+*** teacher: Lysichko Olga Innokentyevna
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=5648
+*** books: Ryabushko Calculus IDZ vol. 1 and vol. 2
+*** cab: V-302
+** schedule
+*** TODO CS practice
+SCHEDULED: <2024-03-25 Mon 08:15 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-18 Mon 11:51]
+:END:
+- State "DONE"       from "TODO"       [2024-03-18 Mon 11:51]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 07:38]
+** homework
+** notes
+*** we will be learning programming on next practice
+* Deutsch
+** properties
+*** teacher: Pozdnyakova Svetlana Your'evna
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=891
+*** books: Deutsch Ohne Probleme Full Deutschkurs
+*** cab: V-318
+** schedule
+*** TODO Deutsch
+SCHEDULED: <2024-03-25 Mon 11:45 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-18 Mon 11:51]
+:END:
+
+- State "DONE"       from "TODO"       [2024-03-18 Mon 11:51]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 07:38]
+*** TODO Deutsch
+SCHEDULED: <2024-03-20 Wed 11:45 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-13 Wed 18:32]
+:END:
+- State "DONE"       from "TODO"       [2024-03-13 Wed 18:32]
+** homework
+*** DONE Deutsch: pgs 169-186 read & mem verbs
+DEADLINE: <2024-03-11 Mon>
+
+*** DONE Deutsch: pgs 159-186 learning
+DEADLINE: <2024-03-18 Mon>
+** notes
+
+* Graphics
+** properties
+*** teacher: Verkhoturova Elena Viktorovna
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=518
+*** books: none
+*** cab: B-307
+** schedule
+*** TODO Graphics
+SCHEDULED: <2024-03-26 Tue 15:30 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-19 Tue 18:04]
+:END:
+- State "DONE"       from "TODO"       [2024-03-19 Tue 18:04]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 17:57]
+** homework
+*** DONE drawning fix + nanoCAD task 1 get it done
+DEADLINE: <2024-03-12 Tue>
+
+*** DONE Graphics: send first drawing to el.edu
+DEADLINE: <2024-03-19 Tue>
+** notes
+*** 4/5 for homework and 5/5 for control work!!!
+
+* PE
+** properties
+*** teacher: Orobey Maksim Nikolaevich
+*** location: FOK
+*** course: https://el.istu.edu/course/view.php?id=7665
+*** books: none
+*** cab: FOK
+** schedule
+*** TODO PE
+SCHEDULED: <2024-03-25 Mon 10:00 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-18 Mon 11:51]
+:END:
+- State "DONE"       from "TODO"       [2024-03-18 Mon 11:51]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 07:38]
+*** TODO PE
+SCHEDULED: <2024-03-21 Thu 10:00 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-14 Thu 15:43]
+:END:
+- State "DONE"       from "TODO"       [2024-03-14 Thu 15:43]
+** homework
+** notes
+* ODK
+** properties
+*** teacher: Artamomova Anastasiya Svyatoslavovna
+*** location: campus
+*** course: none
+*** books: none
+*** cab: J-316
+** schedule
+*** TODO ODK
+SCHEDULED: <2024-03-26 Tue 11:45 +1w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-19 Tue 18:04]
+:END:
+- State "DONE"       from "TODO"       [2024-03-19 Tue 18:04]
+- State "DONE"       from "TODO"       [2024-03-12 Tue 17:57]
+** homework
+*** DONE selfpresentation
+DEADLINE: <2024-03-12 Tue>
+** notes
+
+* ProfDel
+** properties
+*** teacher: Chensky
+*** location: Technopark
+*** course: none
+*** books: none
+*** cab: Z-206a
+** schedule
+*** TODO ProfDel
+SCHEDULED: <2024-03-26 Tue 13:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-12 Tue 17:57]
+:END:
+- State "DONE"       from "TODO"       [2024-03-12 Tue 17:57]
+*** TODO ProfDel
+SCHEDULED: <2024-03-21 Thu 11:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT:
+:END:
+** homework
+*** TODO ProfDel: NFC Protocol Presentation
+DEADLINE: <2024-03-26 Tue>
+** notes
+
+* TEC
+** properties
+*** teacher: Nasnikova Irina Genadyevna
+*** location: campus
+*** course: https://el.istu.edu/course/view.php?id=2041
+*** books: none
+*** cab: J-306 / J-304
+** schedule
+*** TODO TEC (Lecture)
+SCHEDULED: <2024-04-02 Tue 13:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-19 Tue 18:04]
+:END:
+
+- State "DONE"       from "TODO"       [2024-03-19 Tue 18:04]
+*** TODO TEC (Practice)
+SCHEDULED: <2024-03-20 Wed 08:15 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT:
+:END:
+
+*** TODO TEC (Lab)
+SCHEDULED: <2024-03-22 Fri 15:30 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT:
+:END:
+** homework
+*** DONE course work task 1
+DEADLINE: <2024-03-21 Thu>
+
+*** TODO TEC: use new methods on AC from course work n1
+DEADLINE: <2024-03-22 Fri>
+** notes
+
+* History
+** properties
+*** teacher:
+*** location:
+*** course:
+*** books:
+*** cab:
+** schedule
+*** TODO History (Lecture)
+SCHEDULED: <2024-03-28 Thu 11:45 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-14 Thu 15:43]
+:END:
+
+- State "DONE"       from "TODO"       [2024-03-14 Thu 15:43]
+*** TODO History (Seminar)
+SCHEDULED: <2024-03-21 Thu 08:15 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT:
+:END:
+** homework
+*** TODO History: Seminar
+DEADLINE: <2024-03-21 Thu>
+** notes
+
+* OTPI
+** properties
+*** teacher:
+*** location:
+*** course:
+*** books:
+*** cab:
+** schedule
+*** TODO OTPI (x2)
+SCHEDULED: <2024-03-29 Fri 08:15 +2w>
+:PROPERTIES:
+:STYLE: habit
+:LAST_REPEAT: [2024-03-15 Fri 22:01]
+:END:
+- State "DONE"       from "TODO"       [2024-03-15 Fri 22:01]
+** homework
+** notes
