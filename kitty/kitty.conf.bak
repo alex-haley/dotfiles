@@ -7,10 +7,10 @@
 # You can get a list of full family names available on your computer by running
 # kitty list-fonts
 # The default values shown below rely on your OS to choose an appropriate monospace font family.
-# font_family        Hack Nerd Font Mono
-# bold_font          auto
-# italic_font        Operator Mono Bold Italic
-# bold_italic_font   auto
+font_family        Hack Nerd Font Mono
+bold_font          auto
+italic_font        Operator Mono Bold Italic
+bold_italic_font   auto
 
 map cmd+1 goto_tab 1
 map cmd+2 goto_tab 2
@@ -24,7 +24,7 @@ map cmd+9 goto_tab 9
 
 # Font size (in pts)
 # NOTE: Do not use odd values as these affect how kitty renders margin
-font_size        10
+font_size        9
 
 # background_opacity 0.95
 dynamic_background_opacity yes
@@ -40,11 +40,3 @@ include ./theme.conf
 background_opacity         0.95
 dynamic_background_opacity yes
 
-
-
-# BEGIN_KITTY_FONTS
-font_family      family="ProFontWindows"
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
-# END_KITTY_FONTS
