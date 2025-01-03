@@ -35,12 +35,8 @@
 (package-initialize)
 (package-refresh-contents)
 
-;; Linum
-(require 'linum)
-(line-number-mode t)
-(global-linum-mode t)
-(column-number-mode t)
-(setq linum-format "%d")
+;; set lines numbers
+(global-display-line-numbers-mode 1)
 
 ;; Evil
 (unless (package-installed-p 'evil)
