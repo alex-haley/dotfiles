@@ -1,3 +1,6 @@
+;; startup
+(setq inhibit-startup-screen t)
+
 ;; system-type definition
 (defun system-is-linux()
   (string-equal system-type "gnu/linux"))
@@ -21,6 +24,18 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+;; custom theme
+(add-to-list 'custom-theme-load-path "c:/Users/Alex/AppData/Roaming/.emacs.d/themes/")
+(load-theme 'naysayer t)
+
+;; font
+(set-frame-font "FiraCode Nerd Font Mono Reg 11" nil t)
+
+;; tabulation
+(setq tab-width 4
+      c-basic-offset tab-width)
+(setq backward-delete-char-untabify-method nil) ;; delete whole tab while backspace is pressed
+
 ;; someconf
 ;; (global-display-line-numbers-mode)
 (setq frame-title-format "emacs")
@@ -28,22 +43,27 @@
 (setq show-paren-style 'expression)
 (electric-pair-mode 1)
 
-;; MELPA
-(require 'package)
-(add-to-list 'package-archives
-	     '("melpa" . "https://melpa.org/packages/"))
-(package-initialize)
-(package-refresh-contents)
+;; KEYBINDINGS ->
+
+(keymap-global-set "C-M-j" 'next-line)
+(keymap-global-set "C-M-k" 'previous-line)
+(keymap-global-set "C-M-u" 'backward-char)
+(keymap-global-set "C-M-i" 'forward-char)
+(keymap-global-set "C-u"   'left-word)
+(keymap-global-set "C-i"   'right-word)
+(keymap-global-set "C-<return>" "C-e <return>")
+
+;; KEYBINDINGS END
 
 ;; set lines numbers
-(global-display-line-numbers-mode 1)
+;; (global-display-line-numbers-mode 1)
 
 ;; Evil
-(unless (package-installed-p 'evil)
-  (package-install 'evil))
+;;(unless (package-installed-p 'evil)
+;;  (package-install 'evil))
 
-(require 'evil)
-(evil-mode 1)
+;;(require 'evil)
+;;(evil-mode 1)
 
 ;; Dired
 (require 'dired)
@@ -55,22 +75,3 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 (global-set-key "\C-cl" 'org-stroke-link)
 (add-to-list 'auto-mode-alist '("\\.org$" . Org-mode))
-
-;; org-roam (mbe)
-
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(gruvbox-dark-soft))
- '(custom-safe-themes
-   '("2ff9ac386eac4dffd77a33e93b0c8236bb376c5a5df62e36d4bfa821d56e4e20" default))
- '(package-selected-packages '(gruvbox-theme)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
