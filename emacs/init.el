@@ -38,10 +38,7 @@
 
 ;; someconf
 ;; (global-display-line-numbers-mode)
-(setq frame-title-format "emacs")
-(show-paren-mode t)
-(setq show-paren-style 'expression)
-(electric-pair-mode 1)
+(push '(fullscreen . maximized) default-frame-alist) ;; toggle maximized buffer on startup and beyond
 
 ;; KEYBINDINGS ->
 
