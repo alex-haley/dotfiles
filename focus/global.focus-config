@@ -6,12 +6,15 @@
 # C:/projects/my-project  # <- the first directory in the list becomes the working directory
 # C:/jai
 # src  # <- this would be relative to the config file location
-W:\monk
-W:\papers
-W:\tests
+W:\todo
 W:\book
-W:\saskatchewan
+W:\papers
+W:\monk
+W:\metacompiler
 W:\sokoB
+W:\first
+W:\tests
+W:\saskatchewan
 
 [ignore]
 # Files and directories matching the following wildcards will not be loaded or descended into
@@ -31,7 +34,8 @@ W:\sokoB
 # Optional file associations in the format `<wildcard1> <wildcard2> ... : <language>`
 # Example:
 # *.hpp *.hh *.h : cpp
-# todo.txt : todo
+todo.txt : todo
+metacompiler.txt : todo
 
 
 [[settings]]
@@ -212,6 +216,7 @@ Ctrl-Shift-NumpadEnter      new_line_above_without_breaking
 Ctrl-1                      switch_to_left_editor
 Ctrl-2                      switch_to_right_editor
 Ctrl-,                      switch_to_other_editor
+Ctrl-Alt-O                  switch_to_other_editor
 Ctrl-Shift-,                duplicate_editor
 
 Ctrl-Alt-Shift-ArrowLeft    move_editor_to_the_left
