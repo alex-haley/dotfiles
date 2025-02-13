@@ -142,7 +142,7 @@ search_is_case_sensitive_when_uppercase_present:    true
 [editors]   # <- this means that the following key combos will apply only when editing text
 
 # Key combination           Action
-Alt-F4                      quit
+Alt-Y                       quit
 
 Ctrl-D                      select_word_or_create_another_cursor
 Ctrl-Shift-A                select_all_occurrences
@@ -153,14 +153,16 @@ Ctrl-Shift-D                duplicate_lines
 # Shift-Backspace             delete_line_and_go_up
 # Shift-Delete                delete_line
 
-Ctrl-Shift-K                      delete_to_end_of_line
+Ctrl-Shift-K                delete_to_end_of_line
 Ctrl-Shift-Delete           delete_to_end_of_line
 Ctrl-Shift-Backspace        delete_to_start_of_line
 
 Alt-ArrowUp                 move_selected_lines_up
+Ctrl-'                       move_selected_lines_up
 Alt-ArrowDown               move_selected_lines_down
+Ctrl-;                       move_selected_lines_down
 
-Ctrl-Shift-J                      join_lines
+# Ctrl-Shift-J                join_lines
 # Ctrl-Shift-J                join_lines_no_spaces_in_between
 
 Tab                         indent_or_go_to_next_tabstop
@@ -175,8 +177,10 @@ Ctrl-Shift-S                save_as
 Alt-Minus                   move_to_previous_editor_history
 Alt-Plus                    move_to_next_editor_history
 
-Ctrl-PageUp                 move_to_previous_buffer
-Ctrl-PageDown               move_to_next_buffer
+# Ctrl-PageUp                 move_to_previous_buffer
+Alt-P                       move_to_previous_buffer
+# Ctrl-PageDown               move_to_next_buffer
+Alt-N                       move_to_next_buffer
 
 Ctrl-/                      toggle_comment
 Ctrl-L                      select_line
@@ -198,9 +202,9 @@ Ctrl-Alt-ArrowRight         scroll_viewport_right
 Alt-V                       move_cursor_to_viewport_center
 
 {Shift}-Ctrl-ArrowUp        move_up_to_empty_line
-Ctrl-K                move_up_to_empty_line
+Ctrl-K                      move_up_to_empty_line
 {Shift}-Ctrl-ArrowDown      move_down_to_empty_line
-Ctrl-J                move_down_to_empty_line
+Ctrl-J                      move_down_to_empty_line
 
 Alt-Shift-I                 add_cursors_to_line_ends
 Alt-Shift-Ctrl-I            add_cursors_to_line_starts
@@ -306,32 +310,40 @@ F11                         toggle_fullscreen
 # {Shift}- means shift is optional, the key combination will still be matched.
 # NOTE: in this editor the Shift key is hard-coded to extend selection when held
 {Shift}-ArrowUp             move_up
-Ctrl-Alt-K                  move_up
+{Shift}-Ctrl-Alt-K          move_up
 {Shift}-Ctrl-ArrowUp        move_up_fast
 {Shift}-PageUp              move_up_one_page
 
 {Shift}-ArrowDown           move_down
-Ctrl-Alt-J                  move_down
+{Shift}-Ctrl-Alt-J          move_down
 {Shift}-Ctrl-ArrowDown      move_down_fast
 {Shift}-PageDown            move_down_one_page
 
 {Shift}-ArrowLeft           move_left
-Ctrl-Alt-U                  move_left
-Ctrl-U                      move_left_by_word
+{Shift}-Ctrl-Alt-U          move_left
+{Shift}-Ctrl-U              move_left_by_word_ends
+{Shift}-Alt-U               move_left_by_word
 {Shift}-Alt-ArrowLeft       move_left_by_word
 {Shift}-Ctrl-ArrowLeft      move_left_by_word_ends
 
 {Shift}-ArrowRight          move_right
-Ctrl-Alt-I                  move_right
-Ctrl-I                      move_right_by_word
+{Shift}-Ctrl-Alt-I          move_right
+{Shift}-Ctrl-I              move_right_by_word_ends
+{Shift}-Alt-I               move_right_by_word
 {Shift}-Alt-ArrowRight      move_right_by_word
 {Shift}-Ctrl-ArrowRight     move_right_by_word_ends
 
-{Shift}-Home                jump_to_line_start
-{Shift}-End                 jump_to_line_end
-{Shift}-Ctrl-Home           jump_to_file_start
-{Shift}-Ctrl-End            jump_to_file_end
-{Shift}-Ctrl-M              jump_to_matching_bracket
+# {Shift}-Home                jump_to_line_start
+{Shift}-Ctrl-E              jump_to_line_start
+# {Shift}-End                 jump_to_line_end
+{Shift}-Ctrl-R              jump_to_line_end
+# {Shift}-Ctrl-Home           jump_to_file_start
+Alt-,                       jump_to_file_start
+# {Shift}-Ctrl-End            jump_to_file_end
+Alt-M                       jump_to_file_end
+# {Shift}-Ctrl-M              jump_to_matching_bracket
+Ctrl-Alt-L                  jump_to_matching_bracket
+# jump_to_matching_bracket dont work...
 
 {Shift}-Backspace           delete_left_char
 {Shift}-Delete              delete_right_char
