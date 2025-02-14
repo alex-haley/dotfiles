@@ -342,7 +342,7 @@ Alt-,                       jump_to_file_start
 # {Shift}-Ctrl-End            jump_to_file_end
 Alt-M                       jump_to_file_end
 # {Shift}-Ctrl-M              jump_to_matching_bracket
-Ctrl-Alt-L                  jump_to_matching_bracket
+{Shift}-Ctrl-Alt-L                  jump_to_matching_bracket
 # jump_to_matching_bracket dont work...
 
 {Shift}-Backspace           delete_left_char
