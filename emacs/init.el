@@ -67,6 +67,9 @@
 (global-unset-key (kbd "C-M-r"))
 (global-unset-key (kbd "M-S-i"))
 (global-unset-key (kbd "C-v"))
+(global-unset-key (kbd "M-k"))
+(global-unset-key (kbd "M-u"))
+(global-unset-key (kbd "M-j"))
 
 ;; SETTING
 
@@ -74,23 +77,22 @@
 (keymap-global-set "C-M-k"   'previous-line)
 (keymap-global-set "C-M-u"   'backward-char)
 (keymap-global-set "C-M-i"   'forward-char)
-(keymap-global-set "C-u"     'left-word)
-(keymap-global-set "C-i"     'right-word)
+(keymap-global-set "M-u"     'left-word)
 (keymap-global-set "C-<return>" "C-M-r <return>")
 (keymap-global-set "C-d"     'kill-region)
 (keymap-global-set "C-q"     'query-replace)
-(keymap-global-set "C-k"     'backward-paragraph)
-(keymap-global-set "C-j"     'forward-paragraph)
+(keymap-global-set "M-k"     'backward-paragraph)
+(keymap-global-set "M-j"     'forward-paragraph)
 (keymap-global-set "C-f"     'isearch-forward)
 (keymap-global-set "C-s"     'save-buffer)
 (keymap-global-set "C-M-r"   'move-end-of-line)
 (keymap-global-set "C-M-e"   'move-beginning-of-line)
 (keymap-global-set "C-e"     'recenter-top-bottom)
 (keymap-global-set "C-l"     'kill-line)
-(keymap-global-set "M-i"     'list-buffers)
 (keymap-global-set "C-v"     'yank)
 (keymap-global-set "C-c C-c" 'copy-region-as-kill)
 (keymap-global-set "C-w"     'kill-region)
+(keymap-global-set "M-i"     'right-word)
 
 ;; KEYBINDINGS END
 
@@ -120,7 +122,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(emacs-gc-stats zig-mode parent-mode highlight-numbers ## magit evil)))
+   '(elscreen emacs-gc-stats evil highlight-numbers with-editor zig-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
