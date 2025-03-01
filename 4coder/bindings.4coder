@@ -64,7 +64,7 @@ keys_file = {
 	{ "move_down_to_blank_line_end",   	"J", "Control" },
 	{ "move_left_whitespace_boundary", 	"U", "Control" },
 	{ "move_right_whitespace_boundary",	"I", "Control" },
-	{ "move_line_up",					  "Apostrophe", "Control" },
+	{ "move_line_up",					  "Quote", "Control" },
 	{ "move_line_down",				    "Semicolon", "Control" },
 	{ "backspace_alpha_numeric_boundary",  "Backspace", "Control" },
 	{ "delete_alpha_numeric_boundary",     "Delete", "Control" },
@@ -84,7 +84,6 @@ keys_file = {
 	{ "kill_buffer", 					  "K", "Control", "Shift" },
 	{ "duplicate_line",                    "L", "Control" },
 	{ "cursor_mark_swap",            	  "M", "Control" },
-	{ "reopen",                      	  "O", "Control", "Shift" },
     { "query_replace",               	  "Q", "Control" },
     { "query_replace_identifier",    	  "Q", "Control", "Shift" },
     { "query_replace_selection",           "Q", "Alt" },
@@ -129,5 +128,6 @@ keys_code = {
     { "place_in_scope",             "ForwardSlash", "Alt" },
     { "delete_current_scope",       "Minus", "Alt" },
 	{ "move_left_alpha_numeric_or_camel_boundary", "U", "Alt" },
-	{ "move_left_alpha_numeric_or_camel_boundary", "I", "Alt" },
+	{ "move_right_alpha_numeric_or_camel_boundary", "I", "Alt" },
+	{ "open_file_in_quotes", "O", "Control", "Shift" }
 };
