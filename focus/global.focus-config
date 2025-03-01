@@ -1,4 +1,4 @@
-[6]  # Version number. Do not delete.
+[16]  # Version number. Do not delete.
 
 [[workspace]]
 # These directories and files will be scanned when a workspace is opened so that search etc. works.
@@ -11,10 +11,12 @@ W:\book
 W:\papers
 W:\monk
 W:\metacompiler
+W:\mini_computer
 W:\sokoB
-W:\first
 W:\tests
 W:\saskatchewan
+W:\uxn
+W:\uxn_examples
 
 [ignore]
 # Files and directories matching the following wildcards will not be loaded or descended into
@@ -34,9 +36,9 @@ W:\saskatchewan
 # Optional file associations in the format `<wildcard1> <wildcard2> ... : <language>`
 # Example:
 # *.hpp *.hh *.h : cpp
+# todo.txt : todo
 todo.txt : todo
 metacompiler.txt : todo
-
 
 [[settings]]
 
@@ -50,9 +52,7 @@ highlight_matching_brackets:                        false
 show_paste_effect:                                  true
 disable_file_open_close_animations:                 false
 double_shift_to_search_in_workspace:                false
-tab_size:                                           4
-insert_spaces_when_pressing_tab:                    true
-strip_trailing_whitespace_on_save:                  except_lines_with_cursor
+strip_trailing_whitespace_on_save:                  except_lines_with_cursor  # options: all, except_lines_with_cursor, disabled
 smooth_scrolling:                                   true
 scroll_beyond_last_line:                            false
 line_height_scale_percent:                          120
@@ -62,7 +62,7 @@ copy_whole_line_without_selection:                  false
 editor_history_size:                                1024
 line_wrap_is_on_by_default:                         true
 show_line_numbers:                                  false
-show_selected_text_length:                          false
+show_ruler_at_column:                               0
 colored_titlebar:                                   true   # Windows 11+ only
 dark_titlebar:                                      false  # Windows only
 hide_mouse_when_typing:                             true
@@ -70,7 +70,6 @@ draw_indent_guides:                                 false
 auto_surround_with_brackets_and_quotes:             false
 auto_close_brackets:                                false
 prefer_system_file_dialogs:                         false  # Windows only
-show_cursors_off_screen:                            true
 persist_local_search_results:                       false  # if true, search results will stay highlighted and you have to dismiss them using the `escape` action
 load_most_recent_project_on_start:                  false
 projects_sorting_order:                             most_recent_first
@@ -83,13 +82,38 @@ build_panel_height_percent:                         50
 save_all_file_backed_buffers_on_build:              false
 save_current_buffer_on_build:                       false
 
-status_bar_position:                                bottom   # options: top, bottom
 color_preview_popup:                                enabled  # options: enabled, minimized, disabled
 search_is_case_sensitive_when_uppercase_present:    true
 
+detect_indentation:                                 true
+indent_using:                                       spaces
+tab_size:                                           4
+
+status_bar_position:                                top   # options: top, bottom
+status_bar_show_cursors_off_screen:                 true
+status_bar_show_line_col:                           true
+status_bar_show_indentation:                        true
+status_bar_show_selected_text_length:               true
+
+show_scrollbar_marks:                               false
+scrollbar_width_scale:                              1.0
+scrollbar_min_opacity:                              0.0   # if you want the scrollbar to be always visible, set this to 1.0
+scrollbar_max_opacity:                              1.0
+scrollbar_fade_in_sensitivity:                      10.0  # controls when the scrollbar appears as the mouse pointer gets close
+scrollbar_fade_out_delay_seconds:                   2.0   # how long the scrollbar stays visible after scrolling
+
+# NOTE: some settings can be specified for a subset of files, based on their language or a wildcard,
+# for example:
+# [file: <wildcard1>, <wildcard2>, ...]
+# [lang: golang, cpp, c, ...]
+
+[file: *.md, *.txt]
+line_wrap_is_on_by_default:                         true
+draw_indent_guides:                                 false
 
 
-# This is an example configuration for build commands
+# Below is an example configuration for build commands
+# (uncomment and modify to use)
 
 # [[build commands]]
 # build_working_dir:      <build working dir for all commands>  # <- paths relative to the workspace working dir (the first one in the list) are allowed
@@ -144,8 +168,10 @@ search_is_case_sensitive_when_uppercase_present:    true
 # Key combination           Action
 Alt-Y                       quit
 
-Ctrl-D                      select_word_or_create_another_cursor
-Ctrl-Shift-A                select_all_occurrences
+# Ctrl-D                      select_word_or_create_another_cursor
+# Ctrl-R                      revert_select_word_or_create_another_cursor
+# Ctrl-Y                      move_selection_to_next_word
+# Ctrl-Shift-A                select_all_occurrences
 
 Ctrl-Shift-D                duplicate_lines
 
@@ -153,17 +179,15 @@ Ctrl-Shift-D                duplicate_lines
 # Shift-Backspace             delete_line_and_go_up
 # Shift-Delete                delete_line
 
-Ctrl-Shift-K                delete_to_end_of_line
-Ctrl-Shift-Delete           delete_to_end_of_line
-Ctrl-Shift-Backspace        delete_to_start_of_line
-
 Alt-ArrowUp                 move_selected_lines_up
-Ctrl-'                       move_selected_lines_up
+Alt-'                       move_selected_lines_up
 Alt-ArrowDown               move_selected_lines_down
-Ctrl-;                       move_selected_lines_down
+Alt-;                       move_selected_lines_down
 
-# Ctrl-Shift-J                join_lines
+# Ctrl-J                      join_lines
 # Ctrl-Shift-J                join_lines_no_spaces_in_between
+
+# Ctrl-U                      change_case_cycle
 
 Tab                         indent_or_go_to_next_tabstop
 Shift-Tab                   unindent
@@ -177,9 +201,7 @@ Ctrl-Shift-S                save_as
 Alt-Minus                   move_to_previous_editor_history
 Alt-Plus                    move_to_next_editor_history
 
-# Ctrl-PageUp                 move_to_previous_buffer
 Alt-P                       move_to_previous_buffer
-# Ctrl-PageDown               move_to_next_buffer
 Alt-N                       move_to_next_buffer
 
 Ctrl-/                      toggle_comment
@@ -201,10 +223,8 @@ Ctrl-Alt-ArrowRight         scroll_viewport_right
 
 Alt-V                       move_cursor_to_viewport_center
 
-{Shift}-Ctrl-ArrowUp        move_up_to_empty_line
-Ctrl-K                      move_up_to_empty_line
-{Shift}-Ctrl-ArrowDown      move_down_to_empty_line
-Ctrl-J                      move_down_to_empty_line
+{Shift}-Ctrl-K              move_up_to_empty_line
+{Shift}-Ctrl-J              move_down_to_empty_line
 
 Alt-Shift-I                 add_cursors_to_line_ends
 Alt-Shift-Ctrl-I            add_cursors_to_line_starts
@@ -219,8 +239,7 @@ Ctrl-Shift-NumpadEnter      new_line_above_without_breaking
 
 Ctrl-1                      switch_to_left_editor
 Ctrl-2                      switch_to_right_editor
-Ctrl-,                      switch_to_other_editor
-Ctrl-Alt-O                  switch_to_other_editor
+Ctrl-Alt-O                      switch_to_other_editor
 Ctrl-Shift-,                duplicate_editor
 
 Ctrl-Alt-Shift-ArrowLeft    move_editor_to_the_left
@@ -231,6 +250,7 @@ Ctrl-Shift-N                create_new_file_on_the_side
 
 Alt-Shift-ArrowUp           create_cursor_above
 Alt-Shift-ArrowDown         create_cursor_below
+
 Alt-A                       align_cursors
 
 Alt-Z                       toggle_line_wrap
@@ -240,7 +260,6 @@ Ctrl-Shift-Alt-N            open_another_editor_instance
 
 [open file dialog]
 
-Enter                       open_entry_in_place
 Ctrl-Enter                  open_entry_on_the_side
 Ctrl-1                      open_entry_on_the_left
 Ctrl-2                      open_entry_on_the_right
@@ -253,7 +272,6 @@ Backspace                   pop_directory
 
 [search dialog]
 
-Enter                       open_entry_in_place
 Ctrl-Enter                  open_entry_on_the_side
 Ctrl-1                      open_entry_on_the_left
 Ctrl-2                      open_entry_on_the_right
@@ -296,6 +314,11 @@ Ctrl-Shift-Z                redo
 Ctrl-D                      select_word
 Ctrl-A                      select_all
 
+Ctrl-Shift-X                cut_to_end_of_line
+Ctrl-Shift-K                delete_to_end_of_line
+Ctrl-Shift-Delete           delete_to_end_of_line
+Ctrl-Shift-Backspace        delete_to_start_of_line
+
 Ctrl-W                      close_current_editor
 Ctrl-Shift-W                close_other_editor
 
@@ -303,9 +326,14 @@ Escape                      escape  # combines close_dialog and remove_additiona
 
 Ctrl-Shift-L                toggle_expand
 
-Ctrl-B                      toggle_build_panel
+Ctrl-B                      build_panel_toggle
 
 F11                         toggle_fullscreen
+
+Enter                       open_entry_in_place
+
+Tab                         focus_next_ui_element
+Shift-Tab                   focus_previous_ui_element
 
 # {Shift}- means shift is optional, the key combination will still be matched.
 # NOTE: in this editor the Shift key is hard-coded to extend selection when held
@@ -321,36 +349,34 @@ F11                         toggle_fullscreen
 
 {Shift}-ArrowLeft           move_left
 {Shift}-Ctrl-Alt-U          move_left
-{Shift}-Ctrl-U              move_left_by_word_ends
-{Shift}-Alt-U               move_left_by_word
-{Shift}-Alt-ArrowLeft       move_left_by_word
-{Shift}-Ctrl-ArrowLeft      move_left_by_word_ends
+{Shift}-Alt-ArrowLeft       move_left_by_character_type
+{Shift}-Alt-U               move_left_by_character_type
+{Shift}-Ctrl-ArrowLeft      move_left_through_word_throttled
+{Shift}-Meta-ArrowLeft      move_left_through_word
+{Shift}-Ctrl-U              move_left_through_word
 
 {Shift}-ArrowRight          move_right
 {Shift}-Ctrl-Alt-I          move_right
-{Shift}-Ctrl-I              move_right_by_word_ends
-{Shift}-Alt-I               move_right_by_word
-{Shift}-Alt-ArrowRight      move_right_by_word
-{Shift}-Ctrl-ArrowRight     move_right_by_word_ends
+{Shift}-Alt-ArrowRight      move_right_by_character_type
+{Shift}-Alt-I               move_right_by_character_type
+{Shift}-Ctrl-ArrowRight     move_right_through_word_throttled
+{Shift}-Meta-ArrowRight     move_right_through_word
+{Shift}-Ctrl-I              move_right_through_word
 
-# {Shift}-Home                jump_to_line_start
 {Shift}-Ctrl-E              jump_to_line_start
-# {Shift}-End                 jump_to_line_end
 {Shift}-Ctrl-R              jump_to_line_end
-# {Shift}-Ctrl-Home           jump_to_file_start
-Alt-,                       jump_to_file_start
-# {Shift}-Ctrl-End            jump_to_file_end
-Alt-M                       jump_to_file_end
-# {Shift}-Ctrl-M              jump_to_matching_bracket
-{Shift}-Ctrl-Alt-L                  jump_to_matching_bracket
-# jump_to_matching_bracket dont work...
+{Shift}-Alt-M               jump_to_file_start
+{Shift}-Alt-N               jump_to_file_end
+{Shift}-Ctrl-Alt-L          jump_to_matching_bracket
 
 {Shift}-Backspace           delete_left_char
 {Shift}-Delete              delete_right_char
-{Shift}-Alt-Backspace       delete_word_left_no_underscore
-{Shift}-Alt-Delete          delete_word_right_no_underscore
-{Shift}-Ctrl-Backspace      delete_word_left
-{Shift}-Ctrl-Delete         delete_word_right
+{Shift}-Alt-Backspace       delete_left_by_character_type
+{Shift}-Alt-Delete          delete_right_by_character_type
+{Shift}-Meta-Backspace      delete_left_through_word
+{Shift}-Meta-Delete         delete_right_through_word
+Ctrl-Backspace              delete_left_by_character_type_fast
+Ctrl-Delete                 delete_right_by_character_type_fast
 
 Ctrl-Plus                   increase_font_size
 Ctrl-Minus                  decrease_font_size
@@ -368,8 +394,13 @@ Shift-Ctrl-F8               go_to_previous_build_error_on_the_side
 theme: jblowtorch
 
 [fonts]
-font:       default
-font_size:  14
+font:          default
+font_ui:       default
+font_ui_bold:  default
+font_size:     14
+font_ui_size:  15
+anti_aliasing: lcd  # options: lcd, normal
+hinting:       true
 
 [colors]
 background0:                            15212AFF
@@ -378,12 +409,11 @@ background2:                            18262FFF
 background3:                            1A2831FF
 background4:                            21333FFF
 
-# NOTE: for Jai region_scope colors define background colors for blocks of code that fall into those scopes,
-#       so make sure to override those as well if you change the background.
-#       Those regions are likely to be used for languages other than Jai in the future
+# NOTE: region_scope colors only work for Jai at the moment
 region_scope_export:                    15212AFF
 region_scope_file:                      131C22FF
 region_scope_module:                    1A2831FF
+
 region_header:                          1A5152FF
 region_success:                         226022FF
 region_warning:                         986032FF
@@ -403,6 +433,8 @@ cursor_inactive:                        196666FF
 paste_animation:                        1C4449FF
 splitter:                               21333FFF
 splitter_hover:                         1C4449FF
+ruler:                                  FCEDFC26
+indent_guide:                           FCEDFC26
 letter_highlight:                       599999FF
 list_cursor_lite:                       33CCCC19
 list_cursor:                            33CCCC4C
@@ -410,6 +442,7 @@ shadow_dark:                            0E161C7F
 shadow_transparent:                     0E161C00
 text_input_label:                       3B4450FF
 char_under_cursor:                      FFFFFFFF
+bracket_highlight:                      E8FCFE30
 
 ui_default:                             BFC9DBFF
 ui_dim:                                 87919DFF
