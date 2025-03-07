@@ -1,7 +1,8 @@
 ;;; naysayer-theme.el --- The naysayer color theme
 
 ;; Author: Nick Aversano <nickav@users.noreply.github.com>
-;; Version: 0.33
+;; Edited by Alex Haley
+;; Version: 0.34
 ;; Filename: naysayer-theme.el
 ;; Package-Requires: ((emacs "24"))
 ;; URL: https://github.com/nickav/naysayer-theme.el
@@ -28,7 +29,8 @@
 (defcustom naysayer-theme-cyan "#A1EFE4" "Primary colors - cyan" :type 'string :group 'monokai)
 (defcustom naysayer-theme-violet "#AE81FF" "Primary colors - violet" :type 'string :group 'monokai)
 
-(let ((background "#062329")
+
+(let ((background "#062626")
       (gutters    "#062329")
       (gutter-fg  "#062329")
       (gutters-active "#062329")
