@@ -26,7 +26,8 @@
 (setq auto-save-default nil)
 
 ;; custom theme
-(add-to-list 'custom-theme-load-path "c:/Users/Alex/AppData/Roaming/.emacs.d/themes/")
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'naysayer t)
 
 ;; font
@@ -38,8 +39,8 @@
 (setq backward-delete-char-untabify-method nil) ;; delete whole tab while backspace is pressed
 
 ;; someconf
-;; (global-display-line-numbers-mode)
-(push '(fullscreen . maximized) default-frame-alist) ;; toggle maximized buffer on startup and beyond
+;; toggle maximized buffer on startup and beyond
+(push '(fullscreen . maximized) default-frame-alist)
 
 ;; KEYBINDINGS
 
@@ -124,8 +125,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(elscreen emacs-gc-stats evil highlight-numbers lua-mode with-editor
-	      zig-mode)))
+   '(elscreen emacs-gc-stats empv evil highlight-numbers lua-mode magit
+	      with-editor zig-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

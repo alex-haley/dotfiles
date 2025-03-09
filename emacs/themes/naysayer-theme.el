@@ -48,6 +48,7 @@
       (macros "#8cde94")
       (numbers "#7ad0c6")
       (white     "#ffffff")
+      (cursor    "#a3f166")
       (error "#ff0000")
       (warning "#ffaa00")
       (highlight-line "#0b3335")
@@ -61,7 +62,7 @@
 
    `(default                          ((t (:foreground ,text :background ,background, :weight normal))))
    `(region                           ((t (:foreground nil :background ,selection))))
-   `(cursor                           ((t (:background ,white                        ))))
+   `(cursor                           ((t (:background ,cursor                        ))))
    `(fringe                           ((t (:background ,background   :foreground ,white))))
    `(linum                            ((t (:background ,background :foreground ,gutter-fg))))
    `(highlight ((t (:foreground nil :background ,selection))))
