@@ -20,13 +20,13 @@
 (setq use-dialog-box nil)
 (setq redisplay-dont-pause t)
 (setq ring-bell-function 'ignore)
+(transient-mark-mode -1)
 
 ;; disable autosave
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
 ;; custom theme
-
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'naysayer t)
 
@@ -36,44 +36,36 @@
 ;; tabulation
 (setq tab-width 4
       c-basic-offset tab-width)
-(setq backward-delete-char-untabify-method nil) ;; delete whole tab while backspace is pressed
+;; delete whole tab while backspace is pressed
+(setq backward-delete-char-untabify-method nil)
 
 ;; someconf
 ;; toggle maximized buffer on startup and beyond
 (push '(fullscreen . maximized) default-frame-alist)
+;; enable etags-regen-mode
+(etags-regen-mode 1)
 
 ;; KEYBINDINGS
 
-;; UNSETTING
+(define-key input-decode-map [?\C-i] [C-i])
 
-(global-unset-key (kbd "C-M-i"))
-(global-unset-key (kbd "C-i"))
-(global-unset-key (kbd "M-i"))
-(global-unset-key (kbd "C-M-u"))
-(global-unset-key (kbd "C-u"))
-(global-unset-key (kbd "M-u"))
-(global-unset-key (kbd "C-d"))
-(global-unset-key (kbd "C-w"))
-(global-unset-key (kbd "C-q"))
-(global-unset-key (kbd "C-j"))
-(global-unset-key (kbd "C-M-j"))
-(global-unset-key (kbd "C-k"))
-(global-unset-key (kbd "C-M-k"))
-(global-unset-key (kbd "C-M-o"))
-(global-unset-key (kbd "C-f"))
-(global-unset-key (kbd "C-s"))
-(global-unset-key (kbd "C-l"))
-(global-unset-key (kbd "C-e"))
-(global-unset-key (kbd "C-M-e"))
-(global-unset-key (kbd "C-M-r"))
-(global-unset-key (kbd "M-S-i"))
-(global-unset-key (kbd "C-v"))
-(global-unset-key (kbd "M-k"))
-(global-unset-key (kbd "M-u"))
-(global-unset-key (kbd "M-j"))
-(global-unset-key (kbd "C-z"))
+;; unmap c-mode specific keybindings
+;; because they will not unmap after global-unset-key
+(add-hook 'c-mode-hook
+	  (lambda ()
+	    (define-key c-mode-map (kbd "C-M-e") nil)))
+;; yes different modes for c and c++ is great
+(add-hook 'c++-mode-hook
+	  (lambda ()
+	    (define-key c++-mode-map (kbd "C-M-e") nil)))
 
-;; SETTING
+;; unbind this key in elisp mode so i can move
+;; in my config normally
+(add-hook 'emacs-lisp-mode-hook
+	  (lambda ()
+	    (define-key emacs-lisp-mode-map (kbd "C-M-i") nil)))
+
+;; SETTING KEYS
 
 (keymap-global-set "C-M-j"   'next-line)
 (keymap-global-set "C-M-k"   'previous-line)
@@ -92,10 +84,13 @@
 (keymap-global-set "C-e"     'recenter-top-bottom)
 (keymap-global-set "C-l"     'kill-line)
 (keymap-global-set "C-v"     'yank)
-(keymap-global-set "C-c C-c" 'copy-region-as-kill)
+(keymap-global-set "C-c c"   'copy-region-as-kill)
 (keymap-global-set "C-w"     'kill-region)
-(keymap-global-set "C-i"     'right-word)
+(global-set-key (kbd "<C-i>")     'right-word)
 (keymap-global-set "C-z"     'undo)
+(keymap-global-set "M-m"     'compile)
+(keymap-global-set "C-c C-c" 'comment-region)
+(keymap-global-set "C-c u"   'uncomment-region)
 
 ;; KEYBINDINGS END
 
@@ -108,6 +103,17 @@
 
 ;; highlight-numbers
 (add-hook 'prog-mode-hook 'highlight-numbers-mode)
+
+;; ultra-scroll
+;; if its not installed evaluate command below
+;; (package-vc-install '(ultra-scroll :vc-backend Git :url "https://github.com/jdtsmith/ultra-scroll"))
+(use-package ultra-scroll
+  ;:load-path "~/code/emacs/ultra-scroll" ; if you git clone'd instead of package-vc-install
+  :init
+  (setq scroll-conservatively 101 ; important!
+        scroll-margin 0) 
+  :config
+  (ultra-scroll-mode 1))
 
 ;; Dired
 (require 'dired)
@@ -126,7 +132,10 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    '(elscreen emacs-gc-stats empv evil highlight-numbers lua-mode magit
-	      with-editor zig-mode)))
+	      ultra-scroll with-editor zig-mode))
+ '(package-vc-selected-packages
+   '((ultra-scroll :vc-backend Git :url
+		   "https://github.com/jdtsmith/ultra-scroll"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
