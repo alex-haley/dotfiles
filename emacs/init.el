@@ -27,8 +27,10 @@
 (setq auto-save-default nil)
 
 ;; custom theme
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'naysayer t)
+(add-to-list 'load-path "~/.emacs.d/elisp")
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'haley t)
 
 ;; font
 (set-frame-font "ProFontIIx 11" nil t)
@@ -44,6 +46,8 @@
 (push '(fullscreen . maximized) default-frame-alist)
 ;; enable etags-regen-mode
 (etags-regen-mode 1)
+;; visual-line-mode for comfort wrapping
+(global-visual-line-mode 1)
 
 ;; KEYBINDINGS
 
@@ -94,6 +98,11 @@
 
 ;; KEYBINDINGS END
 
+;; simple-c-mode
+(add-to-list 'load-path "~/.emacs.d/simpc/")
+
+(require 'simpc-mode)
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
@@ -130,9 +139,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("2622c5fb8c18917c174010114d45c91cc0f1c6fa52547b23eda832ec7cb7a066"
+     "024970d6146229f35f72fe34e120d3439df828d62e598169bdbcfbd7ed2cd069"
+     "913e8afbc1126df2b196357df3218ae6e8eb631994db1517200365cb491acf36"
+     default))
  '(package-selected-packages
-   '(elscreen emacs-gc-stats empv evil highlight-numbers lua-mode magit
-	      ultra-scroll with-editor zig-mode))
+   '(autothemer d-mode elscreen emacs-gc-stats empv evil
+		highlight-numbers lua-mode magit ultra-scroll
+		with-editor zig-mode))
  '(package-vc-selected-packages
    '((ultra-scroll :vc-backend Git :url
 		   "https://github.com/jdtsmith/ultra-scroll"))))
