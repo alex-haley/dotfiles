@@ -29,7 +29,7 @@
       (gutter-active "#1B1101")
       (builtin    "#ffffff")
       (selection  "#0000ff")
-      (text       "#ffdba2")
+      (text       "#B18A5A")
       (comments   "#8e7f7f")
       (punctuation "#bc5b62")
       (keywords   "#f2f2f2")
