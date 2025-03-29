@@ -100,7 +100,6 @@
 
 ;; simple-c-mode
 (add-to-list 'load-path "~/.emacs.d/simpc/")
-
 (require 'simpc-mode)
 
 (require 'package)
@@ -124,6 +123,15 @@
   :config
   (ultra-scroll-mode 1))
 
+;; hl-mode
+(use-package hl-todo
+  :hook (prog-mode . hl-todo-mode)
+  :config
+  (setq hl-todo-keyword-faces
+	`(("TODO"  . "#FF0000")
+	  ("FIXME" . "#A14600")
+	  ("NOTE"  . "#63B100"))))
+
 ;; Dired
 (require 'dired)
 (setq dired-recursive-deletes 'top) ;; for directory deleting
@@ -146,7 +154,7 @@
      default))
  '(package-selected-packages
    '(autothemer d-mode elscreen emacs-gc-stats empv evil
-		highlight-numbers lua-mode magit ultra-scroll
+		highlight-numbers hl-todo lua-mode magit ultra-scroll
 		with-editor zig-mode))
  '(package-vc-selected-packages
    '((ultra-scroll :vc-backend Git :url

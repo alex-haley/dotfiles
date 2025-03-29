@@ -34,7 +34,7 @@
       (punctuation "#bc5b62")
       (keywords   "#f2f2f2")
       (variables  "#f2c335")
-      (functions  "#752929")
+      (functions  "#f2c335") ;; old one is #752929
       (methods    "#bc5b62")
       (strings    "#e9ff7d")
       (constants  "#bc5b62")
