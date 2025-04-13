@@ -33,7 +33,7 @@
 (load-theme 'haley t)
 
 ;; font
-(set-frame-font "ProFontIIx 11" nil t)
+(set-frame-font "ProFontIIx 12" nil t)
 
 ;; tabulation
 (setq tab-width 4
@@ -44,6 +44,7 @@
 ;; someconf
 ;; toggle maximized buffer on startup and beyond
 (push '(fullscreen . maximized) default-frame-alist)
+
 ;; enable etags-regen-mode
 (etags-regen-mode 1)
 ;; visual-line-mode for comfort wrapping
@@ -102,6 +103,11 @@
 (add-to-list 'load-path "~/.emacs.d/simpc/")
 (require 'simpc-mode)
 
+;; associate simpc-mode with .odin files
+;; because odin-mode that I've installed
+;; is not good.
+(add-to-list 'auto-mode-alist '("\\.odin\\'" . simpc-mode))
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
@@ -125,7 +131,8 @@
 
 ;; hl-mode
 (use-package hl-todo
-  :hook (prog-mode . hl-todo-mode)
+  :hook ((prog-mode . hl-todo-mode)
+	 (text-mode . hl-todo-mode))
   :config
   (setq hl-todo-keyword-faces
 	`(("TODO"  . "#FF0000")
@@ -154,8 +161,8 @@
      default))
  '(package-selected-packages
    '(autothemer d-mode elscreen emacs-gc-stats empv evil
-		highlight-numbers hl-todo lua-mode magit ultra-scroll
-		with-editor zig-mode))
+		highlight-numbers hl-todo lua-mode magit org-roam
+		slime ultra-scroll with-editor zig-mode))
  '(package-vc-selected-packages
    '((ultra-scroll :vc-backend Git :url
 		   "https://github.com/jdtsmith/ultra-scroll"))))
