@@ -40,7 +40,7 @@ mark_thickness = 2;
 lister_roundness = 20;
 
 // Code Wrapping
-treat_as_code = ".cpp.c.hpp.h.cc.cs.java.rs.glsl.m.mm";
+treat_as_code = ".cpp.c.hpp.h.cc.cs.java.rs.glsl.m.mm.odin";
 enable_virtual_whitespace = true;
 virtual_whitespace_regular_indent = 4;
 enable_code_wrapping = true;
@@ -61,11 +61,11 @@ indent_width = 4;
 default_tab_width = 4;
 
 // Theme
-default_theme_name = "theme-naysayer";
+default_theme_name = "theme-haley";
 
 // Font
 default_font_name = "ProFontIIx.ttf";
-default_font_size = 15;
+default_font_size = 16;
 default_font_hinting = false;
 
 // aa modes:
@@ -74,14 +74,14 @@ default_font_hinting = false;
 default_font_aa_mode = "8bit";
 
 // User
-user_name = "godisemacs";
+user_name = "alex-haley";
 
 // Keyboard AltGr setting
 lalt_lctrl_is_altgr = false;
 
 // Project setup configuration
-default_compiler_bat = "clang-cl";
-default_flags_bat = "-FC -GR- -EHa- -nologo -Zi";
+default_compiler_bat = "cl";
+default_flags_bat = "-nologo";
 default_compiler_sh = "g++";
 default_flags_sh  = "-g";
 

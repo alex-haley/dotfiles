@@ -1,0 +1,59 @@
+// Created by: Alex Haley
+
+defcolor_back   = 0xFF1B1101;
+defcolor_margin = 0xFF2B1101;
+defcolor_margin_hover  = 0xFF966601;
+defcolor_margin_active = 0xFF914106;
+defcolor_list_item        = {defcolor_margin, defcolor_back};
+defcolor_list_item_hover  = {defcolor_margin_active, defcolor_margin};
+defcolor_list_item_active = {defcolor_margin_active, defcolor_margin_active};
+defcolor_cursor = {0xFFA3F166, 0xFFA3F166};
+defcolor_at_cursor      = defcolor_black;
+defcolor_highlight_cursor_line = 0x0FFFFFFF;
+defcolor_highlight      = 0xFF703419;
+defcolor_mark           = 0x70A3F166;
+defcolor_text_default   = 0xFFB18A5A;
+defcolor_at_highlight   = 0xFFB18A5A;
+defcolor_comment        = 0xFF8E7F7F;
+defcolor_comment_pop    = {0xFF00A000, 0xFFA00000};
+defcolor_keyword        = 0xFFFFFFFF;
+defcolor_str_constant   = 0xFFE9FF7D;
+defcolor_char_constant  = defcolor_str_constant;
+defcolor_int_constant   = 0xFFFF8F6D;
+defcolor_float_constant = defcolor_int_constant;
+defcolor_bool_constant  = 0xFFBC5B62;
+defcolor_include        = 0xFF752929;
+defcolor_preproc        = defcolor_include;
+defcolor_special_character = 0xFFFF0000;
+defcolor_ghost_character = 0xFF5B4D3C;
+
+defcolor_paste = 0xFFFFBB00;
+
+defcolor_undo  = 0xFF80005D;
+
+defcolor_highlight_junk = 0x80500000;
+defcolor_highlight_white = 0xFF003A3A;
+
+defcolor_bar = 0xFF1B1101;
+defcolor_bar_active = 0xFF3C1400;
+defcolor_base = 0xFFB18A5A;
+defcolor_pop1 = 0xFF03CF0C;
+defcolor_pop2 = 0xFFFF0000;
+
+defcolor_back_cycle = {defcolor_back};
+defcolor_text_cycle = {defcolor_text_default};
+
+defcolor_line_numbers_back = 0xFF082628;
+defcolor_line_numbers_text = 0xFF082628;
+
+defcolor_non_text  = defcolor_text_default;
+defcolor_function  = 0xFFF2C335;
+defcolor_type      = 0xFFBC5B62;
+defcolor_macro     = 0xFF752929;
+defcolor_enum      = defcolor_keyword;
+defcolor_control   = defcolor_keyword;
+defcolor_primitive = defcolor_keyword;
+defcolor_struct    = defcolor_keyword;
+
+defcolor_function_name = defcolor_function;
+defcolor_type_name = defcolor_type;
