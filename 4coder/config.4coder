@@ -16,8 +16,8 @@ use_file_bars = true;
 hide_file_bar_in_ui = true;
 use_error_highlight = true;
 use_jump_highlight = true;
-use_scope_highlight = true;
-use_paren_helper = true;
+use_scope_highlight = false;
+use_paren_helper = false;
 use_comment_keywords = true;
 lister_whole_word_backspace_when_modified = true;
 show_line_number_margins = false;
@@ -61,10 +61,10 @@ indent_width = 4;
 default_tab_width = 4;
 
 // Theme
-default_theme_name = "theme-haley";
+default_theme_name = "theme-handmade-hero";
 
 // Font
-default_font_name = "ProFontIIx.ttf";
+default_font_name = "ProFontIIxC.ttf";
 default_font_size = 16;
 default_font_hinting = false;
 
